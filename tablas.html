@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            background-color: #0D47A1;
+            color: aliceblue;
+        }
+
+        td {
+            padding: 0.3rem 0.5rem;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #0D47A1;
+        }
+
+        tr:hover {
+            background-color: #E3F2FD !important;
+            cursor: pointer;
+        }
+
+        tr:nth-child(even) {
+            background-color: #E3F2FD;
+        }
+
+        #titulo{
+            text-align: center;
+        }
+
+        #subtitulo{
+            text-align: center;
+            color: #0D47A1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1 id="titulo">
+            Tablas
+        </h1>
+
+        <h2 id="subtitulo">Estilando tablas con CSS</h2>
+
+        <hr>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Carrera</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Alvarenga</td>
+                    <td>jealvarengar@unah.edu.hn</td>
+                    <td rowspan="2" >Ing. en Sistemas</td>
+                    <td>88888888</td>
+                </tr>
+                <tr>
+                    <td>Juan perez</td>
+                    <td>jperez@unah.edu.hn</td>
+                    <td>88888888</td>
+                </tr>
+                <tr>
+                    <td>Juan perez</td>
+                    <td>jperez@unah.edu.hn</td>
+                    <td rowspan="2">Ing. civil</td>
+                    <td>88888888</td>
+                </tr>
+                <tr>
+                    <td>Juan perez</td>
+                    <td>jperez@unah.edu.hn</td>
+                    <!-- <td>Ing. civil</td> -->
+                    <td>88888888</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: center;">
+                        UNAH-VS
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+</body>
+
+</html>
